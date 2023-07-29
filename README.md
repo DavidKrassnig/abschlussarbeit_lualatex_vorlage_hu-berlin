@@ -1,4 +1,4 @@
-# Inoffizielle MA-Arbeit Vorlage für die HU Berlin
+# Inoffizielle Abschlussarbeit Vorlage für die HU Berlin
 Eine inoffizielle LuaLaTeX Vorlage für Masterarbeiten, die an der HU Berlin geschrieben werden.
 
 ## Vorschau
