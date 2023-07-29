@@ -1,0 +1,35 @@
+\chapter{Einführung}
+\lipsum[5] \autocite{abbottProfessionalismFutureLibrarianship1998,alaviReviewKnowledgeManagement2001,altenhoenerZukunftFuerSaures2012,batesInformationProfessionsKnowledge2015,batesInformationScienceInvisible1999,begerRechtOeffentlichenZugaenglichmachung2016,bonteAusSachsenWelt2016,bucklandInformationSchoolsMonk2005,bucklandWhatKindScience2012,cuglianaComputationalTurnDigital2022,degkwitzBibliothekZukunftZukunft2016,degkwitzHaveDreamBibliothek2016,dietzeBibliotheksUndInformationswissenschaft1977}
+
+\lipsum[6] 
+
+\lipsum[75]
+
+\section{Unterkapitel}
+\lipsum[1-2]
+\section{Unterkapitel (Tabellen und Grafiken)}
+\lipsum[3]
+\begin{table}[!htbp] %%Anmerkung: Diese Tabelle ist komplexer als für die meisten notwendig.
+    \centering
+    \caption{Ein Beispielstabelle ohne wirklich sinnvollen Inhalt, die aber ästhetisch anspruchsvoll und komplex dargestellt wird.}
+    \begin{tabular}{lS[tight-spacing=true]S[scientific-notation=fixed, 
+fixed-exponent=-4, round-precision=2, round-mode=places, table-format=1.2e-4,tight-spacing=true]SSS[scientific-notation=fixed, 
+fixed-exponent=-4, round-precision=2, round-mode=places, table-format=1.2e-4,tight-spacing=true]S}\toprule
+& \multicolumn{3}{c}{Kategorie 1} & \multicolumn{3}{c}{Kategorie 2}
+\\\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+          & \multicolumn{1}{S}{P1}    & \multicolumn{1}{S}{P2}     & \multicolumn{1}{S}{P3}  & \multicolumn{1}{S}{P4}    & \multicolumn{1}{S}{P5}      & \multicolumn{1}{S}{P6}\\\midrule
+Proband 1 & 110 & 1.21e-4 & 13.9 & 158 & 8.7e-5 & 5.6 \\
+Proband 2 & 219 & 1.3e-5 & 16.2 & 315 & 1.42e-4 & 18.8 \\
+\bottomrule
+\end{tabular}
+    \label{tab:beispiel}
+\end{table}
+\lipsum[75] Siehe \cref{tab:beispiel,fig:hu-logo}.
+\begin{figure}[!htbp]
+    \centering
+    \includesvg[width=40mm]{matter/titlepage/logo/hu_berlin_logo.svg}
+    \caption{Das Logo der Humboldt-Universität zu Berlin, bestehend aus der Illustration der Gebrüder Humboldt mit dem umlaufendem Schriftzug \enquote{Humboldt-Universität zu Berlin}.}
+    \label{fig:hu-logo}
+\end{figure}
+
+\lipsum[66]

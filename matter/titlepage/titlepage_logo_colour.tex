@@ -1,0 +1,64 @@
+\makeatletter
+\begin{titlepage}
+\doublespacing\centering%
+\vspace*{-24.5mm}\noindent\makebox[\textwidth]{\phantom{Vadid Gissnkra}\hspace*{-19mm}\includesvg[height=32.5mm]{matter/titlepage/logo/hu_berlin_logo_text_singleline_simplified.svg}}
+
+\textbf{\Huge \@title}\vskip 2.5mm
+
+\textbf{\Large \@subtitle}\vfill
+
+{\large Arbeit zum Erreichen des Grades}\\
+\textbf{\Large\degreevar}\vfill
+
+{\large im Fach}\\
+\resizebox{%
+      \ifdim\width>\textwidth
+        \textwidth
+      \else
+        \width
+      \fi
+    }{!}{%
+    \textbf{\Large\programmevar}}\vfill
+
+{\large eingereicht von}\\
+\resizebox{%
+      \ifdim\width>\textwidth
+        \textwidth
+      \else
+        \width
+      \fi
+    }{!}{%
+    \textbf{\Large \@author}}\vfill
+
+{\large an der}\\
+\textbf{\Large\scshape Humboldt-Universität zu Berlin}\vfill
+
+\resizebox{%
+      \ifdim\width>\textwidth
+        \textwidth
+      \else
+        \width
+      \fi
+    }{!}{%
+    \textbf{\Large\scshape\facultyvar}}
+
+\resizebox{%
+      \ifdim\width>\textwidth
+        \textwidth
+      \else
+        \width
+      \fi
+    }{!}{%
+    \textbf{\Large\scshape\institutevar}}\vfill
+
+\parbox{0cm}{\large%
+    \begin{tabbing}
+        \textbf{1. Gutachter/in:} \= \firstsupervisorvar\\
+        \textbf{2. Gutachter/in:} \> \secondsupervisorvar
+    \end{tabbing}
+}\vfill
+
+
+\enlargethispage{16mm}\textbf{\large Berlin, \@date}
+\end{titlepage}
+\makeatother

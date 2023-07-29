@@ -1,0 +1,144 @@
+%!LuaLaTeX
+% TeX Live Version >=2022
+% Diese Vorlage ist lizensiert unter CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+%
+%% Anmerkungen %%
+% Diese Vorlage wird weder von der HU-Berlin befürwortet, noch ist sie direkt mit ihr verbunden, autorisiert oder wird auf irgendeine Arte und Weise von ihr gesponsert. 
+%
+% Vor der Nutzung dieser Vorlage, sollte überprüft werden, ob sie noch den gültigen Richtlinien der HU-Berlin und des entsprechenden Studiengangs entspricht (Aktueller Stand: 2023-07-29 für MA(LIS) Bibliotheks- und Informationswissenschaft)
+%
+%% Dokumentkonfiguration %%
+\documentclass[%
+    fontsize=12pt,          %Schriftgröße festlegen
+    a4paper,                %Seitenformat auf A4 setzen
+    openright,              %Kapitel sollen auf der rechten Seite beginnen
+    twoside=semi,           %Zweiseitiges Layout ohne abwechselnde Ränder
+    headsepline,            %Trennlinie unterhalb des Headers hinzufügen
+    titlepage=firstiscover, %\maketitle als Titelseite anzeigen
+    bibliography=totoc,     %Bibliographie zum Inhaltsverzeichnis hinzufügen
+    listof=totoc,           %Abbildungs- und Tabellenverzeichnis im Inhaltsverzeichnis
+    captions=tableheading,  %Setzt Formatierung für Tabellenüberschriften
+    toc=index,              %Index zum Inhaltsverzeichnis hinzufügen
+    colorlinks,             %Farbige Links (für Online-Veröffentlichung)
+    %hidelinks,              %Versteckte Links (für Druck-Veröffentlichung)
+    pdfa,                   %PDF/A Voreinstellungen
+    %twocolumn,              %Für zweispaltige Darstellung
+    %draft,                  %Auskommentieren für den Entwurfsmodus
+    %final                   %Auskommentieren für den endgültigen Druck
+    ]{scrbook}              %Verwendung der KOMA-Script book-Klasse
+
+%% Dokumentpaketeausschluss
+\PreventPackageFromLoading{fontenc,lmodern} %Sicherstellen dass Standardfonts nicht geladen werden
+\RequirePackage{pdf14}
+
+%% Dokumentpakete
+%\usepackage{showframe}%Anzeige der Layout-Boxen
+\usepackage{lipsum}   %Generierung von Dummy-Text
+\usepackage[a-2b,mathxmp]{pdfx} %PDF/A-2b erzeugen
+\usepackage[automark,draft=false]{scrlayer-scrpage} %Detaillierte Konfiguration von Kopf- und Fußzeilen
+\usepackage[main=ngerman,british]{babel}%Sprache auf Deutsch setzen
+\usepackage{fontspec}                   %LuaLaTeX Standard-Fontpackage
+\usepackage{amsmath}                    %Erweiterte Mathematik
+\usepackage{unicode-math}               %Unicode-Mathematikmodus erzwingen
+    \setmainfont{TeX Gyre Termes}       %Allgemeine Schriftart setzen
+    \setmathfont{TeX Gyre Termes Math}  %Mathematische Schriftart setzen
+\usepackage{xcolor}   %Verbessertes Farbmanagement
+\usepackage[%
+    english=british,  %Anführungszeichen für Englisch auf britischen Stil setzen
+    autostyle=true    %Anführungszeichen automatisch gemäß Sprache setzen
+    ]{csquotes}       %Automatische Formatierung von Anführungszeichen
+%\input{config/citation_author-year} %Dekommentiere diese Linie für Autor-Jahr Zitate
+\input{config/citation_numeric} %Dekommentiere diese Linie für numerische Zitate
+\usepackage[%
+    nameinlink, %Präfix in den Verlinkungen der Referenzen anzeigen
+    ngerman,    %Sprache auf Deutsch setzen; unabhängig von Babel erforderlich
+    capitalise, %Erster Buchstabe groß (nur wichtig für Englisch)
+    noabbrev,   %Deaktiviert Abkürzungen wie Abb. für Abbildung
+    ]{cleveref} %Automatische Präfix-Referenzierung
+\usepackage[usetransparent=true]{svg} %Erlaubt Inkludierung von SVG Dateien
+\usepackage{setspace}                  %Zeilenabstand festlegen
+\usepackage{caption}                   %Anpassung der Beschriftungsformatierung
+    %\captionsetup[table]{skip=10pt}    %Abstand zwischen Tabelle und Unterschrift
+    \captionsetup{labelfont=bf} %Unterschrift in Fettschrift setzen
+\usepackage{booktabs} %Bessere Tabellenästhetik
+\usepackage{tabularx} %Tabellen mit Zeilenumbruch
+\usepackage{array}    %Tabellenfeineinstellungen
+\usepackage{multirow} %Tabellenzeilen kombinieren
+\usepackage{multicol} %Mehrspaltige Dokumentdarstellung
+\usepackage{adjustbox}%Bessere Version von \resizebox
+\usepackage{glossaries-extra}%Abkürzung- und Begriffverwaltung
+\usepackage{siunitx}  %Bessere Einheitenimplementation
+\usepackage{pgfplots} %Akademische Diagramme
+    \pgfplotsset{compat=1.18}
+\usepackage{tikz}     %Erweiterte Zeichnungs- und Grafikkapazitäten
+\usepackage{pdfpages} %Einbinden von PDF-Dateien
+
+%% Neue Befehle und Variabeln
+\input{config/possessive_citation} %\posscite-Befehl für besitzanzeigende Zitate im Englischen einbinden
+\input{config/titlepage_commands}
+\input{config/include_missing_file_error}
+
+%% Formatierung
+\input{config/chapter_no_vertical_space_before}%Eliminiert vertikalen Einzug vor Kapitel
+\input{config/draft_showframe}%Fügt Layoutboxen zum Draft-Modus hinzu
+\input{config/toc_space} %Mehr Platz für Figure-/Table-Nummerierung und Seitenangabe in Verzeichnissen
+\input{config/hyperref_colours} %Bessere Standardfarben für Hyperlinks
+\input{config/intentionally_empty} %Leere Seiten mit Absichtlich-Text
+\renewcommand{\emptypageline}{Diese Seite wurde absichtlich leer gelassen} %Diesen Wert neu definieren, um die gewünschte Meldung anzuzeigen
+\recalctypearea %Passt den Textbereich an Einstellungen an
+
+%% Dokumentmetadaten %%
+\subject{Thema}
+\title{Haupttitel der MA-Arbeit}
+\subtitle{Untertitel der MA-Arbeit}
+\author{Vorname Nachname}
+\date{Abgabedatum}
+\publishers{Verlag}
+\dedication{Widmung}
+\programme{Bibliotheks- und Informationswissenschaft}
+\degree{Master of Arts\\(Library and Information Science)}
+\faculty{Philosophische Fakultät}
+\institute{Institut für Bibliotheks- und Informationswissenschaft}
+\firstsupervisor{Prof. Dr. Henry Jekyll}
+\secondsupervisor{Prof. Dr. Edward Hyde}
+\keywords{Stichwort1, Stichtwort2}
+\languagemetadata{de-DE}
+%
+% PDF Metadaten
+\input{config/set_pdf_metadata}
+
+
+%% Bibliografie %%
+\addbibresource{matter/backmatter/bibliography.bib} %Hauptbibliographieinformationen hinzufügen
+%Anmerkung: Das Bibliografieformat muss oben unter Dokumentpakete eingestellt werden
+
+%% Hauptdokument %%
+%\includeonly{content/einfuehrung} %Selektive Dokumentgenerierung
+\begin{document}
+    %% Vorderer Teil
+    \frontmatter
+        %\include{matter/titlepage/titlepage}    %Titelseite ohne Logo
+        %\include{matter/titlepage/titlepage_logo_bw}%Titelseite mit Logo (schwarz-weiß)
+        \include{matter/titlepage/titlepage_logo_colour}%Titelseite mit Logo (farbig)
+        \include{matter/frontmatter/abstract}      %Deutscher und Englischer Abstract
+        \include{matter/frontmatter/content_list}  %Inhalts-, Tabellen- und Abbildungsverzeichnis
+    %
+    %% Hauptteil
+    \mainmatter
+        \include{content/einfuehrung}
+        \include{content/beispielkapitel}
+    %
+    %% Hinterer Teil
+    {\backmatter%GESCHWEIFTE KLAMMERN NICHT LÖSCHEN! Beeinflusst sonst den Appendix!
+        \emergencystretch=1em\printbibliography %Bibliografie mit besserem Umbruch
+    }%GESCHWEIFTE KLAMMERN NICHT LÖSCHEN! Beeinflusst sonst den Appendix!
+    %
+    %% Appendix
+    \appendix
+    \part*{Appendix}
+    \include{appendices/beispielappendix}
+    %% Selbstständigkeitserklärung
+    % Wichtig: Ersetze die PDF-Datei mit einer ausgefüllten Variante vor der Abgabe!
+    % Wichtig: Die hier beigefügte Datei entspricht der Vorlage des Instituts für Bibliotheks- und Informationswissenschaft. Nutze die Vorlage des entsprechend gültigen Fachbereichs!
+    \include{matter/backmatter/selbststaendigkeitserklaerung}
+\end{document}

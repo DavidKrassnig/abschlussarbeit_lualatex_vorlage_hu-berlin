@@ -1,0 +1,34 @@
+%% This TeX-file sets most blank pages to contain an 'intentionally left blank' text
+\newcommand*{\emptypageline}{THIS PAGE INTENTIONALLY LEFT BLANK}
+\newcommand*{\blankpage}{%
+  \par\vspace*{\fill}%
+  {\centering\MakeUppercase{\emptypageline}\par}
+  \vspace{\fill}%
+}
+%
+\makeatletter
+\renewcommand*{\cleardoubleoddstandardpage}{%
+  \clearpage
+  \if@twoside
+    \ifodd\c@page
+    \else
+      \blankpage
+      \thispagestyle{empty}%
+      \newpage
+      \if@twocolumn\hbox{}\newpage\fi
+    \fi
+  \fi
+}
+\def\@endpart{%
+  \clearpage
+  \if@twoside
+    \ifodd\c@page
+    \else
+      \blankpage
+      \thispagestyle{empty}%
+      \newpage
+      \if@twocolumn\hbox{}\newpage\fi
+    \fi
+  \fi
+}
+\makeatother

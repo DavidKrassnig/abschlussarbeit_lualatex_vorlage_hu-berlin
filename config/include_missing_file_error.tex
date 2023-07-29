@@ -1,0 +1,7 @@
+\makeatletter
+\def\mkfilename#1{%
+  \if\relax\detokenize\expandafter{#1}\relax\else#1/\fi}
+\AddToHook{include/before}%
+  {\IfFileExists{\mkfilename\CurrentFilePath\CurrentFile}{}
+     {\GenericError{}{Error: File \mkfilename\CurrentFilePath\CurrentFile.tex not found!}{\@gobble}{}}}
+\makeatother
