@@ -3,12 +3,12 @@
 \doublespacing\centering%
 \vspace*{-24.5mm}\noindent\makebox[\textwidth]{\phantom{Vadid Gissnkra}\hspace*{-19mm}\includesvg[height=32.5mm]{matter/titlepage/logo/hu_berlin_logo_text_singleline_simplified.svg}}
 
-\textbf{\Huge \@title}\vskip 2.5mm
+\textbf{\Huge\sffamily \@title}\vskip 2.5mm
 
-\textbf{\Large \@subtitle}\vfill
+\textbf{\Large\sffamily \@subtitle}\vfill
 
 {\large Arbeit zum Erreichen des Grades}\\
-\textbf{\Large\degreevar}\vfill
+\textbf{\Large\sffamily\degreevar}\vfill
 
 {\large im Fach}\\
 \resizebox{%
@@ -18,7 +18,7 @@
         \width
       \fi
     }{!}{%
-    \textbf{\Large\programmevar}}\vfill
+    \textbf{\Large\sffamily\programmevar}}\vfill
 
 {\large eingereicht von}\\
 \resizebox{%
@@ -28,10 +28,10 @@
         \width
       \fi
     }{!}{%
-    \textbf{\Large \@author}}\vfill
+    \textbf{\Large\sffamily \@author}}\vfill
 
 {\large an der}\\
-\textbf{\Large\scshape Humboldt-Universität zu Berlin}\vfill
+\textbf{\Large\scshape\sffamily Humboldt-Universität zu Berlin}\vfill
 
 \resizebox{%
       \ifdim\width>\textwidth
@@ -40,7 +40,7 @@
         \width
       \fi
     }{!}{%
-    \textbf{\Large\scshape\facultyvar}}
+    \textbf{\Large\scshape\sffamily\facultyvar}}
 
 \resizebox{%
       \ifdim\width>\textwidth
@@ -49,16 +49,16 @@
         \width
       \fi
     }{!}{%
-    \textbf{\Large\scshape\institutevar}}\vfill
+    \textbf{\Large\scshape\sffamily\institutevar}}\vfill
 
 \parbox{0cm}{\large%
     \begin{tabbing}
-        \textbf{1. Gutachter/in:} \= \firstsupervisorvar\\
-        \textbf{2. Gutachter/in:} \> \secondsupervisorvar
+        \textbf{\sffamily1. Gutachter/in:} \= \firstsupervisorvar\\
+        \textbf{\sffamily2. Gutachter/in:} \> \secondsupervisorvar
     \end{tabbing}
 }\vfill
 
 
-\enlargethispage{16mm}\textbf{\large Berlin, \@date}
+\enlargethispage{16mm}\textbf{\large\sffamily Berlin, \@date}
 \end{titlepage}
 \makeatother
