@@ -34,4 +34,4 @@ Um diese Vorlage zu nutzen, muss als Compiler *LuaLaTeX* und eine *TeX Live Vers
 Sollte Overleaf genutzt werden, so muss nur der Compiler auf *LuaLaTeX* eingestellt werden, da Overleaf alle weiteren notwendigen Pakete automatisch korrekt installiert und eingestellt hat.
 
 ## Lizenz
-Diese Vorlage ist lizensiert unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Diese Lizenz gilt nur für die Vorlage selber. Keine PDF-Datei, die mit dieser Vorlage generiert worden ist, muss angeben, dass dies der Fall war, oder den Schöpfer der Vorlage namentlich erwähnen.
+Diese Vorlage ist lizensiert unter [GNU GENERAL PUBLIC LICENSE v3][LICENSE]. Diese Lizenz gilt nur für die Vorlage. Keine PDF-Datei, die mit dieser Vorlage generiert worden ist, muss angeben, dass dies der Fall war, oder den Schöpfer der Vorlage namentlich erwähnen.
