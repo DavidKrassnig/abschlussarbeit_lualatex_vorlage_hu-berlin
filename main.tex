@@ -22,8 +22,7 @@
     listof=totoc,           %Abbildungs- und Tabellenverzeichnis im Inhaltsverzeichnis
     captions=tableheading,  %Setzt Formatierung für Tabellenüberschriften
     toc=index,              %Index zum Inhaltsverzeichnis hinzufügen
-    colorlinks,             %Farbige Links (für Online-Veröffentlichung)
-    %hidelinks,              %Versteckte Links (für Druck-Veröffentlichung)
+    hidelinks,				%Um Hyperlink-Boxen zu deaktivieren, falls Unterstrich gelöscht wird
     pdfa,                   %PDF/A Voreinstellungen
     %twocolumn,              %Für zweispaltige Darstellung
     %draft,                  %Auskommentieren für den Entwurfsmodus
@@ -85,6 +84,7 @@
 \input{config/draft_showframe}%Fügt Layoutboxen zum Draft-Modus hinzu
 \input{config/toc_space} %Mehr Platz für Figure-/Table-Nummerierung und Seitenangabe in Verzeichnissen
 \input{config/hyperref_colours} %Bessere Standardfarben für Hyperlinks
+\hypersetup{ pdfborderstyle={/W 1 /S /U} } %Unterstrichene Links die nicht gedruckt werden
 \input{config/intentionally_empty} %Leere Seiten mit Absichtlich-Text
 \renewcommand{\emptypageline}{Diese Seite wurde absichtlich leer gelassen} %Diesen Wert neu definieren, um die gewünschte Meldung anzuzeigen
 \recalctypearea %Passt den Textbereich an Einstellungen an
