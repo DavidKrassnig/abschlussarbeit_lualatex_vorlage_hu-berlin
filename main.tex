@@ -9,6 +9,7 @@
 % Vor der Nutzung dieser Vorlage, sollte überprüft werden, ob sie noch den gültigen Richtlinien der HU-Berlin und des entsprechenden Studiengangs entspricht (Aktueller Stand: 2023-07-29 für MA(LIS) Bibliotheks- und Informationswissenschaft)
 %
 %% Dokumentkonfiguration %%
+\directlua{pdf.setminorversion(7)} %Notwendig für korrekte Versionsanzeige wegen LuaLaTeX+pdfx Interaktion 
 \documentclass[%
     fontsize=12pt,          %Schriftgröße festlegen
     a4paper,                %Seitenformat auf A4 setzen
@@ -31,7 +32,6 @@
 
 %% Dokumentpaketeausschluss
 \PreventPackageFromLoading{fontenc,lmodern} %Sicherstellen dass Standardfonts nicht geladen werden
-\RequirePackage{pdf14}
 
 %% Dokumentpakete
 %\usepackage{showframe}%Anzeige der Layout-Boxen
