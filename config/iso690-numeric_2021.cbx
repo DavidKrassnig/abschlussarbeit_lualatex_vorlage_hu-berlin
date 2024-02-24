@@ -1,0 +1,20 @@
+% iso690-numeric_2021.cbx
+
+\def\fileversion{0.3}
+\def\filedate{2024/01/31}
+
+\ProvidesFile{iso690-numeric_2021.cbx}
+  [\filedate\space v\fileversion\space ISO 690:2021 Biblatex Bibliography Style]
+
+\RequireCitationStyle{numeric}
+\RequireCitationStyle{iso-fullcite}
+
+% Format \parencite with parentheses instead of brackets
+\DeclareCiteCommand{\parencite}[\mkbibbrackets]% <---- was \mkbibbrackets
+  {\usebibmacro{prenote}}
+  {\usebibmacro{citeindex}%
+   \usebibmacro{cite}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\endinput
