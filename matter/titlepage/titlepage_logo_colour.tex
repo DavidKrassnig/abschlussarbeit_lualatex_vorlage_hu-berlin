@@ -1,64 +1,51 @@
 \makeatletter
 \begin{titlepage}
-\doublespacing\centering%
-\vspace*{-24.5mm}\noindent\makebox[\textwidth]{\phantom{Vadid Gissnkra}\hspace*{-19mm}\includesvg[height=32.5mm]{matter/titlepage/logo/hu_berlin_logo_text_singleline_simplified.svg}}
+	\doublespacing
+	\centering%
+	\vspace*{-24.5mm}
+	\noindent
+	\makebox[\textwidth]{\phantom{Vadid Gissnkra}\hspace*{-19mm}\includesvg[height=32.5mm]{matter/titlepage/logo/hu_berlin_logo_text_singleline_simplified.svg}}
 
-\textbf{\Huge\sffamily \@title}\vskip 2.5mm
+	\textbf{\Huge\sffamily \@title}\vskip 2.5mm
 
-\textbf{\Large\sffamily \@subtitle}\vfill
+	\textbf{\Large\sffamily \@subtitle}
+	\vfill
 
-{\large eingereicht von}\\
-\resizebox{%
-      \ifdim\width>\textwidth
-        \textwidth
-      \else
-        \width
-      \fi
-    }{!}{%
-    \textbf{\Large\sffamily \@author}}\vfill
+	{\large eingereicht von}\\
+	\resizebox{%
+	\ifdim\width>\textwidth \textwidth \else \width \fi }{!}{%
+	\textbf{\Large\sffamily \@author}}
+	\vfill
 
-{\large als}\\
-    \textbf{\Large\sffamily\degreevar}\vfill
+	{\large als}\\ \textbf{\Large\sffamily\degreevar}
+	\vfill
 
-{\large\degreecontextvar}\\
-\resizebox{%
-      \ifdim\width>\textwidth
-        \textwidth
-      \else
-        \width
-      \fi
-    }{!}{%
-    \textbf{\Large\sffamily\programmevar}}\vfill
+	{\large\degreecontextvar}\\ \resizebox{%
+	\ifdim\width>\textwidth \textwidth \else \width \fi }{!}{%
+	\textbf{\Large\sffamily\programmevar}}
+	\vfill
 
-{\large an der}\\
-\textbf{\Large\sffamily Humboldt-Universität zu Berlin}\vfill
+	{\large an der}\\ \textbf{\Large\sffamily Humboldt-Universität zu Berlin}
+	\vfill
 
-\resizebox{%
-      \ifdim\width>\textwidth
-        \textwidth
-      \else
-        \width
-      \fi
-    }{!}{%
-    \textbf{\Large\sffamily\facultyvar}}
+	\resizebox{%
+	\ifdim\width>\textwidth \textwidth \else \width \fi }{!}{%
+	\textbf{\Large\sffamily\facultyvar}}
 
-\resizebox{%
-      \ifdim\width>\textwidth
-        \textwidth
-      \else
-        \width
-      \fi
-    }{!}{%
-    \textbf{\Large\sffamily\institutevar}}\vfill
+	\resizebox{%
+	\ifdim\width>\textwidth \textwidth \else \width \fi }{!}{%
+	\textbf{\Large\sffamily\institutevar}}
+	\vfill
 
-\parbox{0cm}{\large%
-    \begin{tabbing}
-        \textbf{\sffamily1. Gutachter/in:} \= \firstsupervisorvar\\
-        \textbf{\sffamily2. Gutachter/in:} \> \secondsupervisorvar
-    \end{tabbing}
-}\vfill
+	\parbox{0cm}{\large%
+	\begin{tabbing}
+		\textbf{\sffamily1. Gutachter/in:} \= \firstsupervisorvar  \\
+		\textbf{\sffamily2. Gutachter/in:} \> \secondsupervisorvar
+	\end{tabbing}
+	}
+	\vfill
 
-
-\enlargethispage{16mm}\textbf{\large\sffamily Berlin, \@date}
+	\enlargethispage
+	{16mm}\textbf{\large\sffamily Berlin, \@date}
 \end{titlepage}
 \makeatother
