@@ -7,23 +7,24 @@ Eine inoffizielle LuaLaTeX Vorlage für Masterarbeiten, die an der HU Berlin ges
 Titelseite
 </summary>
   
-![thesis-nobox-01](https://github.com/DavidKrassnig/abschlussarbeit_lualatex_vorlage_hu-berlin/assets/96623786/e43eeda9-9144-44dc-9cb3-7b2af0f7f075)
+![thesis-nobox-01](https://github.com/DavidKrassnig/abschlussarbeit_lualatex_vorlage_hu-berlin/assets/96623786/6955292c-c3df-4f94-90c2-bdf1ce741bac)
+
 </details>
 
 <details>
 <summary>
 Beispielseite
 </summary>
-  
-![thesis-nobox-14](https://github.com/DavidKrassnig/abschlussarbeit_lualatex_vorlage_hu-berlin/assets/96623786/3e047201-bb84-406c-8af0-6ecfbf36dc41)
+
+![thesis-nobox-14](https://github.com/DavidKrassnig/abschlussarbeit_lualatex_vorlage_hu-berlin/assets/96623786/40037cc6-394a-4446-b42f-c75fc65983fb)
 </details>
 
 <details>
 <summary>
 Literaturverzeichnis
 </summary>
-  
-![thesis-nobox-19](https://github.com/DavidKrassnig/abschlussarbeit_lualatex_vorlage_hu-berlin/assets/96623786/9f5a69f2-6758-4a5a-99ff-08ac8f2cfd56)
+
+![thesis-nobox-19](https://github.com/DavidKrassnig/abschlussarbeit_lualatex_vorlage_hu-berlin/assets/96623786/41263495-6645-4c6e-9ce9-eb8a2bd006ef)
 </details>
 
 
