@@ -1,0 +1,13 @@
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.lof
+*.log
+*.lot
+*.out
+main.pdf
+*.run.xml
+*.toc
+*.xmpi
+svg-inkscape/
