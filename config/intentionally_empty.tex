@@ -5,30 +5,11 @@
   {\centering\MakeUppercase{\emptypageline}\par}
   \vspace{\fill}%
 }
-%
-\makeatletter
-\renewcommand*{\cleardoubleoddstandardpage}{%
-  \clearpage
-  \if@twoside
-    \ifodd\c@page
-    \else
-      \blankpage
-      \thispagestyle{empty}%
-      \newpage
-      \if@twocolumn\hbox{}\newpage\fi
-    \fi
-  \fi
-}
-\def\@endpart{%
-  \clearpage
-  \if@twoside
-    \ifodd\c@page
-    \else
-      \blankpage
-      \thispagestyle{empty}%
-      \newpage
-      \if@twocolumn\hbox{}\newpage\fi
-    \fi
-  \fi
-}
-\makeatother
+
+\DeclareNewLayer[
+    foreground,
+    textarea,
+    contents=\blankpage
+  ]{blankpage.fg}
+\DeclarePageStyleByLayers{blank}{blankpage.fg}
+\KOMAoptions{cleardoublepage=blank}
