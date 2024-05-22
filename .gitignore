@@ -11,3 +11,4 @@ main.pdf
 *.toc
 *.xmpi
 svg-inkscape/
+*.synctex.gz
